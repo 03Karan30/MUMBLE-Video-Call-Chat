@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mumble</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/home.css'>
+
+</head>
+<body>
+
+    <header id="nav">
+        <div class="nav--list">
+             <a href="/"/>
+                 <h3 id="logo">
+                     <img src="./images/logo.png" alt="Site Logo">
+                     <span>Mumble</span>
+                 </h3>
+             </a>
+        </div>
+ 
+         <div id="nav__links">
+             <a class="nav__link" id="create__room__btn" href="lobby.html">
+                 Create Room
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ede0e0" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+             </a>
+         </div>
+     </header>
+
+    <section class="hero__section">
+        <h2>Interactive Chat & Streaming</h2>
+        <div class="hero__section__img">
+            <img style="max-height: 550px;object-fit: contain;" src="./images/preview.png">
+        </div>
+    </section>
+
+    <main >
+        <section id="room__list">
+            <h3 id="room__listTitle">Live Now: <span id="rooms__count">0</span></h3>
+            <div class="room__container">
+            </div>
+        </section>
+     </main>
+    
+</body>
+<script type="text/javascript" src="js/AgoraRTC_N-4.11.0.js"></script>
+
+<script type="text/javascript" src="js/agora-rtm-sdk-1.4.4.js"></script>
+<script src='js/home.js'></script>
+</html>
